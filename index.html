@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="assets/js/phaser.js"></script>
+        <script src="assets/js/datgui.js"></script>
+        <script type="module" src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
+<style>
+    body {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+    canvas {
+        height: 90vh;
+    }
+
+    @media (max-width: 700px){
+        body {
+            flex-direction: column-reverse !important;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100vw;
+        }
+        div#logs { 
+            width: 99vw !important;
+        }
+        canvas {
+            height: 100%;
+            width: 100vw;
+        }
+     } 
+</style>
